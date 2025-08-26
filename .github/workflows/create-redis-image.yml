@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # déclenchement manuel depuis l’onglet Actions
 
 jobs:
-  test:
+  create-image:
     runs-on: 
         - self-hosted
         - runner-test
