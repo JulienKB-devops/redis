@@ -1,0 +1,14 @@
+name: Test Connect Self Hosted Runner
+
+on:
+  workflow_dispatch: # déclenchement manuel depuis l’onglet Actions
+
+jobs:
+  test:
+    runs-on: 
+        - self-hosted
+        - runner-test
+
+    steps:
+      - name: Vérifier le runner
+        run: echo "Hello 🚀 je tourne bien sur mon runner self-hosted 'self-hosted-runners'" && docker compose ls
