@@ -5,10 +5,10 @@ on:
 
 jobs:
   test:
-    runs-on:
+    runs-on: 
         - self-hosted
         - runner-test
 
     steps:
       - name: Vérifier le runner
-        run: echo "Hello 🚀 je tourne bien sur mon runner self-hosted 'self-hosted-runners'"
+        run: echo "Hello 🚀 je tourne bien sur mon runner self-hosted 'self-hosted-runners'" && docker compose ls
